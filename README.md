@@ -1,5 +1,3 @@
-# App-VibeCoding-Guide
-
 # App-Vibe-Coding-Guide
 
 ## Getting Started
