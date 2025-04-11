@@ -62,7 +62,15 @@ Now the fun begins!
 
 ### Your first implementation prompt
 - Select **Claude Sonnet 3.7 Thinking** in Cursor.  
-- Prompt: Read all the documents in `/memory-bank`, and proceed with Step 1 of the implementation plan. I will run the tests. Do not start Step 2 until I validate the tests. Once I validate them, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does.
+- Prompt: 
+``` bash
+Read all the documents in `/memory-bank`, and proceed with Step 1 of the implementation plan. I will run the tests. Do not start Step 2 until I validate the tests. Once I validate them, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does.
+```
+
+**Alternative prompt:**
+``` bash
+Read all the documents in /memory-bank, and proceed with Phase 1 of the implementation plan. Once Phase 1 is complete open progress.md and document what you did for future developers. Then add any architectural insights to architecture.md to explain what each file does but don't include any code.
+```
 
 - **Extreme vibe:** Install [Superwhisper](https://superwhisper.com) to speak casually with Claude instead of typing.  
 
