@@ -40,7 +40,7 @@ Setting up everything correctly is key. If you’re serious about creating a ful
 ### 4. Memory Bank
 - Create a new folder, open it in Cursor, create another folder, name it`memory-bank`.  
 - Add the following files:  
-  - `game-design-document.md`  
+  - `app-design-document.md`  
   - `tech-stack.md`  
   - `implementation-plan.md`  
   - `progress.md` (for tracking completed steps)  
