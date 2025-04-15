@@ -44,7 +44,8 @@ Setting up everything correctly is key. If you’re serious about creating a ful
   - `tech-stack.md`  
   - `implementation-plan.md`  
   - `progress.md` (for tracking completed steps)  
-  - `architecture.md` (for documenting file purposes)  
+  - `architecture.md` (for documenting file purposes, as a general outline of codebase)
+  - `file-guide.md` (for describing what each code file accross every directory in your codebase does)
 
 ### 5. Setup `.cursor/rules`
 - In Cursor, press `Cmd + Shift + P`, type "rules", and hit Enter.  
