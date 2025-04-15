@@ -11,3 +11,7 @@ Has all of this been fully implemented:
 
 *copy-paste the entire step/phase
 ```
+Or:
+```bash
+based on what we've done in our entire chat, how much of phase X is completed?
+```
