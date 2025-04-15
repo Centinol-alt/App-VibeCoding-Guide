@@ -43,7 +43,7 @@ Setting up everything correctly is key. If you’re serious about creating a ful
   - `app-design-document.md`  
   - `tech-stack.md`  
   - `implementation-plan.md`  
-  - `progress.md` (for tracking completed steps)  
+  - `progress.md` (for tracking completed steps, sometimes the step or phase of your implementation plan doesn't get fully completed - see the `#Progress Implementation Verification` prompt in[prompt library](prompt-library.md))  
   - `architecture.md` (for documenting file purposes, as a general outline of codebase)
   - `file-guide.md` (for describing what each code file accross every directory in your codebase does)
 
