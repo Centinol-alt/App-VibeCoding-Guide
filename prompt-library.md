@@ -15,3 +15,55 @@ Or:
 ```bash
 based on what we've done in our entire chat, how much of phase X is completed?
 ```
+- **Code Generation Template**:
+     ```bash
+     Generate a [Flutter widget/FastAPI endpoint] for [specific functionality].
+     Requirements:
+     - Must handle [specific use cases]
+     - Should implement [specific design patterns]
+     - Needs to integrate with [related components]
+     - Follow these patterns from existing code: [examples]
+     Error handling should include: [expected error scenarios]
+     ```
+
+- **Code Review Template**:
+     ```bash
+     Review this [component type] code:
+     [paste code]
+     
+     Focus on:
+     - Security vulnerabilities
+     - Performance issues
+     - Adherence to project patterns
+     - Potential edge cases
+     - Optimization opportunities
+     Provide specific recommendations with code examples.
+     ```
+
+- **Optimization Template**:
+     ```bash
+     Optimize this [function/component] for [performance/memory usage/etc]:
+     [paste code]
+     
+     Current issues:
+     - [describe specific performance concerns]
+     - [mention any constraints]
+     
+     Required functionality must be preserved:
+     - [list key behaviors that cannot change]
+     ```
+
+- **Architecture Decision Template**:
+     ```bash
+     I need to implement [feature]. I'm considering these approaches:
+     1. [Approach 1]
+     2. [Approach 2]
+     
+     Key considerations:
+     - [scalability needs]
+     - [performance requirements]
+     - [security concerns]
+     - [offline capabilities]
+     
+     Related components: [list]
+     ```
