@@ -15,6 +15,9 @@ Or:
 ```bash
 based on what we've done in our entire chat, how much of phase X is completed?
 ```
+
+---
+
 - **Code Generation Template**:
      ```bash
      Generate a [Flutter widget/FastAPI endpoint] for [specific functionality].
