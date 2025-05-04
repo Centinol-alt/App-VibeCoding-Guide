@@ -55,25 +55,26 @@ Setting up everything correctly is key. If you’re serious about creating a ful
   > Provides reference materials and guidelines. Includes file structure guides and workflow rules.
 
     Files:
-      • `.cursor/rules`
-      • `file-guide.md`
+  - `.cursor/rules`
+  - `file-guide.md`
 
   Subfolder: `planning`
   > Details strategic plans for project execution. Covers implementation and migration strategies.
 
     Files:
-      • `implementation-plan.md`
+  - `implementation-plan.md`
 
   Subfolder: `progress`
   > Tracks the development status of the project. Add to it after each Phase/Step is implemented, then push your commit.
 
-    Files: `progress.md`
+    Files:
+  - `progress.md`
 
   Subfolder: `setup`
   > Offers instructions for setting up the project environment. Contains setup guides for Databases, S3 buckets, Cloudflare etc (whatever you're using).
 
     Files:
-      • `tech-stack.md`
+  - `tech-stack.md`
 
 #### Recommendations:
 1. If you want to change something moderate-big then create a new `implementation-plan` for it with a new `progress` document as well. For exampple, lets say you want to change the UI, create a new `UI-design-plan.md` (name it as you wish but keep in mind that the plan is for the LLM to understand how to implement what you want, which is why the `/project-docs` structure is as it is [helps the LLM understand better] so the naming of your documents is also important) with a corresponding `progress` document separate to the original one for the first `implementation-plan.md`.
