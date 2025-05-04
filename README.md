@@ -52,7 +52,7 @@ Setting up everything correctly is key. If you’re serious about creating a ful
 
   Subfolder: `guides`
   > Provides reference materials and guidelines. Includes file structure guides and workflow rules.
-    Files:
+  Files:
       • `.cursor/rules`
       • `file-guide.md`
 
