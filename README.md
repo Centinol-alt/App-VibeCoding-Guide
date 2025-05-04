@@ -41,16 +41,41 @@ Setting up everything correctly is key. If you’re serious about creating a ful
 - Examine the proposed code structure for modularity and clarity. If needed, ask Grok 3 to refine it.  
 - **Tip:** Look for potential risks (e.g., tight dependencies, complex integrations) and plan mitigations (e.g., fallback options, buffer time).
 
-### 5. Memory Bank
-- Create a new folder, open it in Cursor, and create another folder named `memory-bank`.  
-- Add the following files:  
-  - `app-design-document.md`  
-  - `tech-stack.md`  
-  - `implementation-plan.md`  
-  - `progress.md` (Development progress log tracking completed tasks, challenges, and decisions)  
-  - `architecture.md` (System architecture documentation describing the overall structure and component interactions)  
-  - `file-guide.md` (Describing all files in the project)  
-  - `testing-log.md` (To track test results and coverage for each step)
+### 5. Project Docs
+- Create a new folder in your apps root called `/project-docs`.  
+- Add the following sub-folders & files:  
+  Subfolder: `design'
+  > Outlines design strategies and system architecture. Includes UI/UX design plans and architectural overviews.
+    Files:
+      • `app-design.md`
+      • `architecture.md`
+
+  Subfolder: `guides`
+  > Provides reference materials and guidelines. Includes file structure guides and workflow rules.
+    Files:
+      • `.cursor/rules`
+      • `file-guide.md`
+
+  Subfolder: `planning`
+  > Details strategic plans for project execution. Covers implementation and migration strategies.
+    Files:
+      • `implementation-plan.md`
+
+  Subfolder: `progress`
+  > Tracks the development status of the project. Add to it after each Phase/Step is implemented, then push your commit.
+    Files: `progress.md`
+
+  Subfolder: `setup`
+  > Offers instructions for setting up the project environment. Contains setup guides for Databases, S3 buckets, Cloudflare etc (whatever you're using).
+    Files:
+      • `tech-stack.md`
+
+#### Recommendations:
+1. If you want to change something moderate-big then create a new `implementation-plan` for it with a new `progress` document as well. For exampple, lets say you want to change the UI, create a new `UI-design-plan.md` (name it as you wish but keep in mind that the plan is for the LLM to understand how to implement what you want, which is why the `/project-docs` structure is as it is [helps the LLM understand better] so the naming of your documents is also important) with a corresponding `progress` document separate to the original one for the first `implementation-plan.md`.
+
+2. When creating a new implementation plan use Grok 3 thinking or Claude 3.7 sonnet thinking (or Opus) to create the plan, discuss with the LLM until you have the plan finalized to your vision.
+
+3. Create a `README.md` in the root of `/project-docs` that explains the purpose of /project-docs, this helps the LLM understand more. Include a Folder Structure section and Purpose section.
 
 ### 6. Setup `.cursor/rules`
 - In Cursor, press `Cmd + Shift + P`, type "rules", and hit Enter.  
@@ -63,20 +88,20 @@ Now the fun begins!
 
 ### Making Sure Everything Is Clear
 - Select **Claude Sonnet 3.7 Thinking** in Cursor.  
-- Prompt: "Read all the documents in `/memory-bank`. Is `implementation-plan.md` clear? What are your questions to make it 100% clear for you?"  
+- Prompt: "Read all the documents in `/project-docs`. Is `implementation-plan.md` clear? What are your questions to make it 100% clear for you?"  
 - Answer any questions Claude asks to clarify the plan.  
 - Prompt Claude to edit `implementation-plan.md` accordingly to improve it.  
 
 ### Your First Implementation Prompt
 - Select **Claude Sonnet 3.7 Thinking** in Cursor.  
 - Prompt:  
-  "Read all the documents in `/memory-bank`, and proceed with Step 1 of the implementation plan. I will run the tests. Do not start Step 2 until I validate the tests. Once I validate them, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does."
+  "Read all the documents in `/project-docs`, and proceed with Step 1 of the implementation plan. I will run the tests. Do not start Step 2 until I validate the tests. Once I validate them, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does."
 
 - **Alternative Prompt 1:**  
-  "Read all the documents in `/memory-bank`, and proceed with Phase 1 of the implementation plan. Once Phase 1 is complete, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does but don't include any code."
+  "Read all the documents in `/project-docs`, and proceed with Phase 1 of the implementation plan. Once Phase 1 is complete, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does but don't include any code."
 
 - **Alternative Prompt 2:**  
-  "Read all the documents in `/memory-bank`, and proceed with Phase 1 of the implementation plan. Once Phase 1 is complete, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does but don't include any code, and update `file-guide.md` to describe any new code files created."
+  "Read all the documents in `/project-docs`, and proceed with Phase 1 of the implementation plan. Once Phase 1 is complete, open `progress.md` and document what you did for future developers. Then add any architectural insights to `architecture.md` to explain what each file does but don't include any code, and update `file-guide.md` to describe any new code files created."
 
 - [See Prompt Library for more](prompt-library.md)  
 - **Extreme vibe:** Install [Superwhisper](https://superwhisper.com) to speak casually with Claude instead of typing.  
@@ -105,7 +130,7 @@ Now the fun begins!
 
 ## Adding Details
 Congratulations, you’ve built the base app! It might be rough and lack features, but now you can experiment and refine it.  
-- For each major feature, create a new `feature-implementation.md` file with short steps and tests.  
+- For each major feature, create a new `implementation-plan.md` file with short steps and tests.  
 - Implement and test incrementally.  
 - **Iterative Refinement:** After each feature, review feedback (e.g., from testing or users) and adjust the code or plan as needed.  
 
@@ -136,4 +161,4 @@ Congratulations, you’ve built the base app! It might be rough and lack feature
 - **Small Edits:** Use Claude Sonnet 3.5.  
 - **Great Copywriting:** Use GPT-4.5.  
 - **Better Prompt Outputs:** Add "Think as long as needed to get this right; I am not in a hurry. What matters is that you follow precisely what I ask and execute it perfectly. Ask me questions if I am not precise enough."  
-- **Documentation:** Keep `memory-bank` files detailed and up-to-date for future reference or collaboration.
+- **Documentation:** Keep `project-docs` files detailed and up-to-date for future reference or collaboration.
