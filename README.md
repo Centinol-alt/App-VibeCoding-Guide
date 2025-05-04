@@ -48,8 +48,8 @@ Setting up everything correctly is key. If you’re serious about creating a ful
   > Outlines design strategies and system architecture. Includes UI/UX design plans and architectural overviews.
 
     Files:
-      • `app-design.md`
-      • `architecture.md`
+  • `app-design.md`
+  • `architecture.md`
 
   Subfolder: `guides`
   > Provides reference materials and guidelines. Includes file structure guides and workflow rules.
