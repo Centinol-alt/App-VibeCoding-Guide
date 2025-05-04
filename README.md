@@ -46,27 +46,32 @@ Setting up everything correctly is key. If you’re serious about creating a ful
 - Add the following sub-folders & files:  
   Subfolder: `design'
   > Outlines design strategies and system architecture. Includes UI/UX design plans and architectural overviews.
+
     Files:
       • `app-design.md`
       • `architecture.md`
 
   Subfolder: `guides`
   > Provides reference materials and guidelines. Includes file structure guides and workflow rules.
-  Files:
+
+    Files:
       • `.cursor/rules`
       • `file-guide.md`
 
   Subfolder: `planning`
   > Details strategic plans for project execution. Covers implementation and migration strategies.
+
     Files:
       • `implementation-plan.md`
 
   Subfolder: `progress`
   > Tracks the development status of the project. Add to it after each Phase/Step is implemented, then push your commit.
+
     Files: `progress.md`
 
   Subfolder: `setup`
   > Offers instructions for setting up the project environment. Contains setup guides for Databases, S3 buckets, Cloudflare etc (whatever you're using).
+
     Files:
       • `tech-stack.md`
 
